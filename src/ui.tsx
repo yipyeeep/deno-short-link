@@ -63,7 +63,7 @@ export function Layout({ children }: { children: ComponentChildren }) {
               </ul>
             </div>
             <a href="/" className="btn btn-ghost normal-case text-xl">
-              Fireship Deno Course
+              Deno Link Shortener Demo
             </a>
           </div>
           <div className="navbar-end hidden lg:flex">
@@ -101,9 +101,9 @@ export function HomePage({ user }: PageProps) {
       <div className="hero min-h-[500px] bg-base-200 rounded-box">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Welcome to link.fireship.app</h1>
+            <h1 className="text-5xl font-bold">Welcome to link.Shortener.app</h1>
             <p className="py-6">
-              link.fireship.app is a Deno-powered URL shortening service.
+              link.Shortener.app is a Deno-powered URL shortening service.
               Create, manage, and track your links with enterprise-grade tools.
             </p>
             {user
