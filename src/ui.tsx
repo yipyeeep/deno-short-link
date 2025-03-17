@@ -85,11 +85,11 @@ export function Layout({ children }: { children: ComponentChildren }) {
           {children}
         </main>
 
-        <footer className="footer footer-center p-4 bg-base-200 text-base-content">
+        {/* <footer className="footer footer-center p-4 bg-base-200 text-base-content">
           <aside>
             <p>Copyright © 2024 - All rights reserved by fireship.io</p>
           </aside>
-        </footer>
+        </footer> */}
       </div>
     </html>
   );
