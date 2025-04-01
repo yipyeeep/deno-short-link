@@ -105,7 +105,7 @@ export function HomePage({ user }: PageProps) {
             <p className="py-6">
               Deno Short Link is a Deno-powered URL shortening service.
               Create, manage, and track your links with enterprise-grade tools.
-              Created by developer HongYip Cheng, this project is Developed as part of Deno Course by <a className="text-blue-500" target="_blank" href="https://fireship.io">Fireship.io</a>.
+              Created by developer HongYip Cheng, this project is Developed as part of the Deno Course by <a className="text-blue-500" target="_blank" href="https://fireship.io">Fireship.io</a>.
             </p>
             {user
               ? (
