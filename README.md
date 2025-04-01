@@ -102,6 +102,13 @@ deno-short-link/
 
 ---
 
+## Conclusion
+
+This link shortener website is a great way to learn more about http server 
+routing, realtime stream listener, as well as basic user authentication.
+By using Deno for both frontend and backend, you can focus solely on 
+mastering essential tools such as typescript and web platform APIs.
+
 ## 📜 License  
 
 MIT © 2025 - [yipyeeep](https://github.com/yipyeeep)  
