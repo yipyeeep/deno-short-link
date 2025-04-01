@@ -11,11 +11,11 @@ interface PageProps {
 
 const BASE_URL = Deno.env.get("DENO_ENV") === "dev"
   ? "http://localhost:8000"
-  : "https://link.fireship.app";
+  : "https://yipyeeep.com";
 
 export function Layout({ children }: { children: ComponentChildren }) {
   return (
-    <html data-theme="light">
+    <html data-theme="dark">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -85,11 +85,12 @@ export function Layout({ children }: { children: ComponentChildren }) {
           {children}
         </main>
 
-        {/* <footer className="footer footer-center p-4 bg-base-200 text-base-content">
+        <footer className="footer footer-center p-4 bg-base-200 text-base-content">
           <aside>
-            <p>Copyright © 2024 - All rights reserved by fireship.io</p>
+            {/* <p>Copyright © 2024 - All rights reserved by fireship.io</p> */}
+            <p>ちゅるちゅるなんだ〜</p>
           </aside>
-        </footer> */}
+        </footer>
       </div>
     </html>
   );
@@ -101,9 +102,9 @@ export function HomePage({ user }: PageProps) {
       <div className="hero min-h-[500px] bg-base-200 rounded-box">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Welcome to link.Shortener.app</h1>
+            <h1 className="text-5xl font-bold">Welcome to yipyeeep.com</h1>
             <p className="py-6">
-              link.Shortener.app is a Deno-powered URL shortening service.
+              yipyeeep.com is a Deno-powered URL shortening service.
               Create, manage, and track your links with enterprise-grade tools.
             </p>
             {user

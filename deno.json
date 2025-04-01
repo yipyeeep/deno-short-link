@@ -2,7 +2,7 @@
   "tasks": {
     "dev": "deno serve --watch --unstable-kv --env -A src/main.ts",
     "test": "deno test tests/",
-    "deploy": "deployctl deploy --save-config --project kanske-link"
+    "deploy": "deployctl deploy --prod --save-config --project finallink"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
@@ -14,8 +14,11 @@
     "strictNullChecks": false
   },
   "deploy": {
-    "project": "6a1f3856-aa4a-48a9-8ec9-296a4b0d5017",
+    "project": "da35bf5d-2052-4baf-a045-a86edc205b01",
     "exclude": [
+      "**/node_modules",
+      "**/node_modules",
+      "**/node_modules",
       "**/node_modules",
       "**/node_modules",
       "**/node_modules",
