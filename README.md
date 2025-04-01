@@ -1,45 +1,48 @@
-# 🔗 Deno Link Shortener  
+# 🦕 Deno Link Shortener  
 
 *A zero-dependency, realtime URL shortener built with Deno & TypeScript*  
 
-![Deno](https://img.shields.io/badge/Deno-464647?style=for-the-badge&logo=deno&logoColor=white)  
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)  
-![Web Platform APIs](https://img.shields.io/badge/Web_APIs-FF3E00?style=for-the-badge)  
+[![Deno](https://img.shields.io/badge/Deno-464647?style=for-the-badge&logo=deno&logoColor=white)](https://deno.land)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)  
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)  
 
-**🚀 Live Demo:** [https://shortlink.deno.dev](https://shortlink.deno.dev)  
+**🚀 Live Demo**: [https://deno-short-link.deno.dev](https://deno-short-link.deno.dev)  
+**📦 Repository**: [github.com/yipyeeep/deno-short-link](https://github.com/yipyeeep/deno-short-link)  
 
 ---
 
-## 📝 Overview  
+## 📌 Overview  
 
-This project is a **complete web app** built with Deno, designed to:  
-✅ Master **TypeScript** and **Web Platform APIs** without third-party dependencies  
-✅ Create **realtime, shareable short links** (like Bit.ly)  
-✅ Learn **advanced Deno patterns** from [Fireship's Deno Course](https://fireship.io/courses/deno/)  
+A minimalist, dependency-free URL shortener built with:  
+✔ **100% Deno** (no Node.js/npm)  
+✔ **Pure TypeScript** (strict mode)  
+✔ **Web Platform APIs** (no frameworks)  
 
-Developed between **March 2–13, 2025**, this project was coded first and documented later to focus on core concepts.  
+Developed as part of [Fireship's Deno Course](https://fireship.io/courses/deno/) between **March 2-13, 2025**  
 
 ---
 
 ## ✨ Features  
 
 - **Zero Dependencies**  
-  Pure Deno + TypeScript + Web APIs.  
-- **Realtime Link Shortening**  
-  Create and share short URLs instantly.  
-- **Minimalist Architecture**  
-  No frameworks—just modern web standards.  
-- **TypeScript-Centric**  
-  Advanced patterns like discriminated unions and generics.  
+  Uses only Deno's built-in modules  
+- **Realtime Link Creation**  
+  Generate short URLs instantly  
+- **Deno KV Storage**  
+  Built-in key-value database  
+- **TypeScript Patterns**  
+  Generics, discriminated unions, and strict typing  
 
 ---
 
 ## 🛠️ Tech Stack  
 
-- **Backend**: Deno (`http/server`, `oak`-free routing)  
-- **Frontend**: HTML5 + DOM APIs (no React/Vue)  
-- **Database**: Deno KV (built-in key-value store)  
-- **TypeScript**: Strict mode + advanced types  
+| Component       | Technology              |
+|----------------|-------------------------|
+| Backend        | Deno HTTP Server        |
+| Database       | Deno KV (built-in)      |
+| Frontend       | DOM APIs + CSS          |
+| Deployment     | Deno Deploy             |
 
 ---
 
@@ -50,60 +53,59 @@ Developed between **March 2–13, 2025**, this project was coded first and docum
    curl -fsSL https://deno.land/x/install/install.sh | sh
    ```
 
-2. **Run the App**:  
+2. **Run Locally**:  
    ```sh
-   deno run --allow-net --allow-read --allow-write src/app.ts
+   deno run --allow-net --allow-read --allow-write src/main.ts
    ```
 
-3. **Open in Browser**:  
+3. **Access App**:  
    Visit `http://localhost:8000`  
 
 ---
 
 ## 📂 Project Structure  
 
-```  
-src/  
-├── app.ts          # Entry point (server + routing)  
-├── lib/  
-│   ├── types.ts    # TypeScript interfaces  
-│   └── utils.ts    # URL shortening logic  
-├── static/         # HTML/CSS/JS  
-└── README.md       # You are here  
-```  
+```
+deno-short-link/
+├── src/
+│   ├── main.ts        # Server entry point
+│   ├── types/         # TypeScript interfaces
+│   ├── utils/         # Shortening logic
+│   └── static/        # Frontend assets
+├── README.md          # This file
+└── deno.json          # Deno config
+```
 
 ---
 
-## 📚 Learnings  
+## 📚 Development Notes  
 
-🔥 **Key Takeaways**:  
-- Deno’s native HTTP server  
-- TypeScript generics for API routes  
-- Deno KV for persistence  
-- How to avoid `node_modules` forever  
+**Why No Dependencies?**  
+- Master core Web Platform APIs  
+- Understand Deno's built-in capabilities  
+- Avoid dependency bloat  
 
----
-
-## 📅 Retrospective  
-
-**Mar 2–13, 2025**:  
-- Built the core in 10 days  
-- Deployed to Deno Deploy  
-- Documented post-completion  
+**Key Learnings**:  
+✔ Deno's native HTTP server  
+✔ TypeScript advanced patterns  
+✔ Deno KV for persistence  
 
 ---
 
-## 🙌 Credits  
+## 🕰️ Project Timeline  
 
-- Instructor: [Fireship](https://fireship.io)  
-- Inspired by: Bit.ly  
-- Motivation: Mastering the **Web Platform**  
+| Date        | Milestone                |
+|-------------|--------------------------|
+| Mar 2, 2025 | Project started          |
+| Mar 10, 2025| Core functionality ready |
+| Mar 13, 2025| Deployed to Deno Deploy  |
 
---- 
+---
 
-**🔐 License**: MIT  
-**🐛 Issues**: PRs welcome!  
+## 📜 License  
 
---- 
+MIT © 2025 - [yipyeeep](https://github.com/yipyeeep)  
 
-*"No dependencies, no distractions—just Deno."* 🦕
+---
+
+*"No npm, no problem."* 🦕💨
