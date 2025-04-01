@@ -87,8 +87,7 @@ export function Layout({ children }: { children: ComponentChildren }) {
 
         <footer className="footer footer-center p-4 bg-base-200 text-base-content">
           <aside>
-            {/* <p>Copyright © 2024 - All rights reserved by fireship.io</p> */}
-            <p>ちゅるちゅるなんだ〜</p>
+            <p>Copyright © 2024 - All rights reserved by fireship.io</p>
           </aside>
         </footer>
       </div>
@@ -102,10 +101,11 @@ export function HomePage({ user }: PageProps) {
       <div className="hero min-h-[500px] bg-base-200 rounded-box">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Welcome to yipyeeep.com</h1>
+            <h1 className="text-5xl font-bold">Welcome to<br />Deno Short Link</h1>
             <p className="py-6">
-              yipyeeep.com is a Deno-powered URL shortening service.
+              Deno Short Link is a Deno-powered URL shortening service.
               Create, manage, and track your links with enterprise-grade tools.
+              Created by developer HongYip Cheng, this project is made by following along the Deno full course by <a className="text-blue-500" target="_blank" href="https://fireship.io">Fireship.io</a>.
             </p>
             {user
               ? (
